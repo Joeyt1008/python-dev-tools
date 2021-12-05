@@ -5,10 +5,10 @@ env:
 language: python
 matrix:
     include:
-        - python: 3.8
+        - python: 3.9
           dist: bionic
           sudo: true
-        - python: 3.8
+        - python: 3.9
           arch: arm64
           dist: bionic
           sudo: true
