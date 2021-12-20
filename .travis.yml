@@ -20,6 +20,10 @@ before_install:
 install:
     - poetry install
 
+before_script:
+    - curl -L https://codeclimate.com/downloads/test-reporter > ./cc-test-reporter
+    - chmod +x ./cc-test-reporter
+    - ./cc-test-reporter before-build
 
 script:
     - tox
