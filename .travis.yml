@@ -13,7 +13,6 @@ matrix:
           dist: bionic
           sudo: true
 
-
 before_install:
     - pip install poetry
 
@@ -24,6 +23,5 @@ before_script:
     - curl -L https://codeclimate.com/downloads/test-reporter > ./cc-test-reporter
     - chmod +x ./cc-test-reporter
     - ./cc-test-reporter before-build
-
 script:
     - tox
