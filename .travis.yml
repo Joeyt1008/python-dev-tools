@@ -21,7 +21,7 @@ install:
 
 before_script:
     - curl -L https://codeclimate.com/downloads/test-reporter > ./cc-test-reporter
-    - chmod +x ./cc-test-reporter
+    - chmod 777 ./cc-test-reporter
     - ./cc-test-reporter
 script:
     - tox
